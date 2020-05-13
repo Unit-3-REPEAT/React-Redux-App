@@ -4,10 +4,25 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+//All the extra imports needed for this project
+import quoteReducer from './reducers';
+import {Provider} from 'react-redux';
+import {createStore, applyMiddleware} from 'redux';
+import thunk from 'redux-thunk'
+import logger from 'redux-logger';
+
+
+
+
+//Set up redux store
+const store = createStore(quoteReducer, applyMiddleware(thunk,logger))
+
+
 ReactDOM.render(
-  <React.StrictMode>
+//Connect redux store by wrapping App inside Provider and passing in store={store}
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
