@@ -3,19 +3,18 @@ import {connect} from 'react-redux';
 
 
 
-
 const Header = (props) => {
-    console.log(`this is props inside Header.js`, props)
+    // console.log(`this is props inside Header.js`, props)
   return (
     <div className="Header">
-       <h1>HEADER</h1>   
+       <h1>Swanson's Quotes:</h1>   
     </div>
   );
 }
 
 
 const mapStateToProps = state => {
-    console.log(`mSTP props inside Header.js -->`, state)
+    // console.log(`mSTP props inside Header.js -->`, state)
     return state
     
 }

@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.errorMessage {
+  color:red;
+}
+
+.fetchButton {
+  color: white;
+  background-color:blue;
+  padding: 10px;
+
+}
+
+.QuoteContainer {
+  width:60%;
+  margin:0 auto;
+  background-color: aliceblue;
+  padding: 15%;
+  font-family: cursive;
+}
