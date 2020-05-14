@@ -1,6 +1,11 @@
 .App {
   text-align: center;
+  background-color: salmon;
+  min-height: 100vh;
+  
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -54,4 +59,11 @@
   background-color: aliceblue;
   padding: 15%;
   font-family: cursive;
+  border-radius: 10px;
+}
+.Header {
+  margin-top: 0;
+}
+.swansonHeader { 
+  margin-top:0;
 }

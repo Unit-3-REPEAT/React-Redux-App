@@ -12,13 +12,13 @@ export const fetchQuote = () => {
         axios
         .get('http://ron-swanson-quotes.herokuapp.com/v2/quotes')
         .then(response => {
-             console.log(`response`, response)
+            //  console.log(`response`, response)
 
         dispatch({type: FETCH_QUOTE_SUCESS, payload: response.data})   
 
         })
         .catch((err) => {
-            console.log(`--->`, err.response)
+            // console.log(`--->`, err.response)
             dispatch({type: FETCH_QUOTE_FAIL, payload:`Sorry! ${err.response.data}`})
         })
         
