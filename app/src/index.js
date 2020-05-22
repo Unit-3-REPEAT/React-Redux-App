@@ -19,7 +19,7 @@ const store = createStore(quoteReducer, applyMiddleware(thunk, logger))
 
 
 ReactDOM.render(
-//Connect redux store by wrapping App inside Provider and passing in store={store}
+
   <Provider store={store}>
     <App />
   </Provider>,

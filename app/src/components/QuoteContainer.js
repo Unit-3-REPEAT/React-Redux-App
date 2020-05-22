@@ -9,8 +9,8 @@ import '../App.css';
 const QuoteContainer = (props) => {
      console.log(`this is props inside QuoteContainer`, props)
 
-     const {quote} = props;
-     console.log(`--->`, quote)
+     const {quote, isFetching, error, fetchQuote } = props;
+     
 
     useEffect(() => {
         props.fetchQuote();
